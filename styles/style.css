@@ -165,13 +165,14 @@ div > a > img {
         position:relative;
         top:125px;
         z-index:-1;
-
+        
       }
       #kalender, #dagboek, #vraagteken, #berichten {
         font-size: 80%;
         display: flex;
         flex-direction: column;
-        
+        width: 160px;
+        height: 200px;
       }
       /* #berichten, #vraagteken {
         margin-top:12px;
