@@ -28,11 +28,13 @@ nav {
     top:5%;
     right:8%;
 }
-
 ul {
     list-style-type: none;
     display: flex;
     justify-content: space-evenly;
+}
+nav > ul > li:focus-within {
+    border: 6px solid #182A42;
 }
 nav > ul > li:nth-child(8) {
     display:none;
@@ -42,15 +44,9 @@ nav > ul > li:nth-child(8) {
     /* margin-left: 70px; */
     margin-top: 50px;
 }
-a {
-    text-decoration: none;
-    color:black;
-}
-
 .blauw{
     flex-direction: column;
 }
-
 section {
     width:85%;
     height:200px;
@@ -60,8 +56,7 @@ section {
     left:0;
     right:0;
     text-align: center;
-    position:relative;
-    
+    position:relative;  
 }
 h2 {
     text-align:center;
@@ -81,7 +76,6 @@ section > p {
     top:20%;
     font-size: 1.5em;
 }
-
 header {
     position: relative;
     left: 20%;
@@ -98,22 +92,22 @@ div > a > p {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    /* margin-left: auto;
-    left:0%;
-    right:0%; */
-    
-   
 }
 .woorden > div {
     background-color: #72AFA6;
     padding: 20px;
     border-radius: 47px;
 }
-
+.woorden > div > a:focus {
+    background-color: #B2DECD;
+    margin:20px;
+}
 a {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-decoration: none;
+    color:black;
 }
 div > a > img {
     width: 176px;
@@ -126,6 +120,8 @@ footer > p {
     justify-content: center;
 }
 
+
+/* Media query kleinere schermen */
 @media screen and (max-width: 1133px){
  
    
