@@ -105,6 +105,9 @@ div > a > p {
 .woorden > div > a:hover {
     background-color: #B2DECD;
 }
+.woorden > div > a > b {
+    text-decoration: underline;
+}
 a {
     display: flex;
     justify-content: center;
