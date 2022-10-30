@@ -121,6 +121,10 @@ div > a > img {
     display:flex;
     align-self: flex-end;
 }
+footer > p {
+    display: flex;
+    justify-content: center;
+}
 
 @media screen and (max-width: 1133px){
  
