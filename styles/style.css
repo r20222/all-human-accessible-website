@@ -39,7 +39,12 @@ nav > ul > li:focus-within {
 nav > ul > li:nth-child(8) {
     display:none;
   }
-
+header > p {
+    font-size: 30px;
+}
+h1 {
+    font-size: 40px;
+}
 #kalender, #dagboek, #vraagteken, #berichten {
     /* margin-left: 70px; */
     margin-top: 50px;
