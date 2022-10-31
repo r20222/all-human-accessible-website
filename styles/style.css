@@ -62,10 +62,11 @@ section {
     right:0;
     text-align: center;
     position:relative;  
+    border: 2px solid black;
 }
 h2 {
     text-align:center;
-    top:20%;
+    top:0%;
     position: relative;
     font-size:1.7em;
 }
@@ -78,7 +79,7 @@ span {
 section > p {
     text-align:center;
     position: relative;
-    top:20%;
+    top:5%;
     font-size: 1.5em;
 }
 header {
@@ -99,16 +100,17 @@ div > a > p {
     align-items: center;
 }
 .woorden > div {
-    background-color: #72AFA6;
+    background-color: #B2DECD;
     padding: 20px;
     border-radius: 47px;
+    border: 2px solid black;
 }
 .woorden > div > a:focus {
-    background-color: #B2DECD;
+    background-color: #D6F0F1;
     margin:20px;
 }
 .woorden > div > a:hover {
-    background-color: #B2DECD;
+    background-color: #D6F0F1;
 }
 .woorden > div > a > b {
     text-decoration: underline;
