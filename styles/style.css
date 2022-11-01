@@ -9,6 +9,7 @@
 /* navigatie */
 nav {
     z-index: 5;  
+    margin-top: 25px;
 }
 #vini-mini-logo {
     position:fixed;
@@ -150,8 +151,9 @@ div > a > img {
 
 
 /* Media query kleinere schermen */
-@media screen and (max-width: 1133px){
- 
+@media screen and (max-width: 1285px ){
+    /* 1133px */
+
    /* navigatie */
     #witte-achtergrond {
         background-color: white;
@@ -214,8 +216,9 @@ div > a > img {
     .woorden {
         flex-flow:wrap;
         position:relative;
-        top:125px;
+        top:0px;
         z-index:-1;
+        margin-top: 160px;
       }
     /* #kalender, #dagboek, #vraagteken, #berichten {
         font-size: 80%;
@@ -224,7 +227,12 @@ div > a > img {
         width: 160px;
         height: 200px;
       } */
+    /* .blauw {
+        height:180px;
+        width:140px;
+    } */
     div > a > img {
+        /* display: none; */
         width: 100px;
         height:70px;
     }
