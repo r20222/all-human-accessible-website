@@ -146,10 +146,10 @@ div > a > img {
 
 /* footer */
 
-footer > p {
+/* footer > p {
     display: flex;
-    justify-content: center;
-}
+    justify-content: flex-start;
+} */
 
 
 /* Media query kleinere schermen */
