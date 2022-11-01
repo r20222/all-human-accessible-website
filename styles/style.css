@@ -53,6 +53,10 @@ nav > ul > li:nth-child(8) {
 h1 {
     font-size: 40px;
 }
+header {
+    position: relative;
+    left: 20%;
+}
 header > p {
     font-size: 30px;
 }
@@ -64,9 +68,6 @@ section {
     background-color: #F4EB34;
     border-radius: 47px;
     margin: auto;
-    left:0;
-    right:0;
-    text-align: center;
     position:relative;  
     border: 2px solid black;
 }
@@ -87,10 +88,6 @@ section > p {
     position: relative;
     top:5%;
     font-size: 1.5em;
-}
-header {
-    position: relative;
-    left: 20%;
 }
 
 
@@ -155,7 +152,7 @@ div > a > img {
 /* Media query kleinere schermen */
 @media screen and (max-width: 1133px){
  
-   
+   /* navigatie */
     #witte-achtergrond {
         background-color: white;
         position: fixed;
@@ -170,55 +167,25 @@ div > a > img {
     nav > ul > li:nth-child(3) {
         display:none;
       }
-      nav > ul > li:nth-child(4) {
+    nav > ul > li:nth-child(4) {
         display:none;
       }
-      nav > ul > li:nth-child(5) {
+    nav > ul > li:nth-child(5) {
         display:none;
       }
-      nav > ul > li:nth-child(6) {
+    nav > ul > li:nth-child(6) {
         display:none;
       }
-      nav > ul > li:nth-child(7) {
+    nav > ul > li:nth-child(7) {
         display:none;
       }
-      nav > ul > li:nth-child(8) {
+    nav > ul > li:nth-child(8) {
         display:flex;
         font-size: 1.5em;
         position: fixed;
         z-index:5;
         top:5%;
-        
-        
       }
-      .woorden {
-        flex-flow:wrap;
-        position:relative;
-        top:125px;
-        z-index:-1;
-        
-      }
-      #kalender, #dagboek, #vraagteken, #berichten {
-        font-size: 80%;
-        display: flex;
-        flex-direction: column;
-        width: 160px;
-        height: 200px;
-      }
-      /* #berichten, #vraagteken {
-        margin-top:12px;
-        margin-bottom: 20px;
-      }
-      #kalender, #dagboek {
-        margin-top: 12px;
-      } */
-      div > a > img {
-        width: 100px;
-        height:70px;
-        /* display:flex;
-        align-self: flex-end; */
-    }
-
     #winkelwagen {
         width: 25px;
         height: 25px; 
@@ -235,6 +202,7 @@ div > a > img {
         right:8%;
         z-index:5;
     }
+    /* header */
     header {
         position: relative;
         left: 5%;
@@ -242,51 +210,54 @@ div > a > img {
         z-index:-1;
         padding-right: 60px
     }
+      /* Blauwe blokken */
+    .woorden {
+        flex-flow:wrap;
+        position:relative;
+        top:125px;
+        z-index:-1;
+      }
+    /* #kalender, #dagboek, #vraagteken, #berichten {
+        font-size: 80%;
+        display: flex;
+        flex-direction: column;
+        width: 160px;
+        height: 200px;
+      } */
+    div > a > img {
+        width: 100px;
+        height:70px;
+    }
+    
+    /* geel notificatieblok */
     section {
         width:95%;
-        height:300px;
+        height:320px;
+        max-width: 450px;
         background-color: #F4EB34;
         border-radius: 47px;
-        margin: auto;
-        left:0;
-        right:0;
-        text-align: center;
         position:relative;
         top: 125px;
         z-index:-1;
         padding-left: 10px;
         padding-right: 10px;
     }
-}
-footer {
+    h2 {
+        top: 8%;
+        text-align: left;
+    }
+    section > p {
+        text-align:left;
+        position: relative;
+        top:5%;
+        font-size: 1.5em;
+    }
+
+    /* footer */
+    footer {
     display: flex;
     justify-content: center;
     padding-top: 100px;
-}
-/* 
-
-#kalender {
-right: 120px;
-}
-#dagboek {
- left: 450px;
-}
-#vraagteken {
- right: 500px;
-}
-#berichten {
- left: 80px;
-}
-.blauw {
-    width: 292px;
-    height: 182px;
-    background-color: #72AFA6;
-    display: inline-block;
-    border-radius: 47px;
-    margin-left:70px;
-    padding-left:50px;
-    position: relative;
-    top:110px;
+    }
 }
 
-} */
