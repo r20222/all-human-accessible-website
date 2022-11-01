@@ -95,6 +95,8 @@ header {
 
 .blauw{
     flex-direction: column;
+    height:220px;
+    width:180px;
 }
 .woorden {
     z-index: 5;
