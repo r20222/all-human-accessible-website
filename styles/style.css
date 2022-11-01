@@ -2,6 +2,8 @@
     font-family: Montserrat,sans-serif;
     box-sizing: border-box;
 }
+
+/* navigatie */
 nav {
     z-index: 5;  
 }
@@ -19,19 +21,22 @@ nav {
     height: 25px; 
     position:fixed;
     top:5%;
-    right:13%;
+    right:10%;
 }
 #account {
     width: 25px;
     height: 25px; 
     position:fixed;
     top:5%;
-    right:8%;
+    right:5%;
 }
 ul {
     list-style-type: none;
     display: flex;
     justify-content: space-evenly;
+}
+nav > ul > li {
+    font-size: 20px;
 }
 nav > ul > li:focus-within {
     border: 6px solid #182A42;
@@ -39,19 +44,17 @@ nav > ul > li:focus-within {
 nav > ul > li:nth-child(8) {
     display:none;
   }
-header > p {
-    font-size: 30px;
-}
+
+/* header  */
+
 h1 {
     font-size: 40px;
 }
-#kalender, #dagboek, #vraagteken, #berichten {
-    /* margin-left: 70px; */
-    margin-top: 50px;
+header > p {
+    font-size: 30px;
 }
-.blauw{
-    flex-direction: column;
-}
+
+/* geel notificatieblok */
 section {
     width:85%;
     height:200px;
@@ -86,28 +89,35 @@ header {
     position: relative;
     left: 20%;
 }
-div > a > p {
-    font-size: 0.4em;
-}
+
 
 /* blauwe blokken */
+
+.blauw{
+    flex-direction: column;
+}
 .woorden {
     z-index: 5;
     font-size: 2em;
-    position:relative;
+    /* position:relative; */
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    margin-top: 30px;
+}
+div > a > p {
+    font-size: 18px;
 }
 .woorden > div {
     background-color: #B2DECD;
     padding: 20px;
     border-radius: 47px;
     border: 2px solid black;
+    /* flex-basis: 100%; */
 }
 .woorden > div > a:focus {
     background-color: #D6F0F1;
-    margin:20px;
+    /* margin:20px; groter op focus */
 }
 .woorden > div > a:hover {
     background-color: #D6F0F1;
@@ -123,11 +133,14 @@ a {
     color:black;
 }
 div > a > img {
-    width: 176px;
-    height:142px;
     display:flex;
-    align-self: flex-end;
+    align-self: center;
+    width:100px;
+    height: 70px;
 }
+
+/* footer */
+
 footer > p {
     display: flex;
     justify-content: center;
