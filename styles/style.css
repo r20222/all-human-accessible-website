@@ -185,8 +185,8 @@ div > a > img {
         position: fixed;
         width: 100%;
         height:140px;
-        margin-top:-20px;
-        margin-left:-10px;
+        margin-top:-30px;
+        /* margin-left:-10px; */
     } 
     nav > ul > li:nth-child(2) {
         display:none;
@@ -208,6 +208,7 @@ div > a > img {
       }
     nav > ul > li:nth-child(8) {
         display:flex;
+        justify-content: center;
         font-size: 1.5em;
         position: fixed;
         z-index:5;
@@ -231,7 +232,7 @@ div > a > img {
     }
     /* header */
     header {
-        position: relative;
+        position: absolute;
         left: 5%;
         top: 120px;
         z-index:-1;
@@ -241,7 +242,7 @@ div > a > img {
     .woorden {
         flex-flow:wrap;
         position:relative;
-        top:0px;
+        top: 100px;
         z-index:-1;
         margin-top: 160px;
       }
@@ -270,7 +271,7 @@ div > a > img {
         background-color: #F4EB34;
         border-radius: 47px;
         position:relative;
-        top: 125px;
+        top: 230px;
         z-index:-1;
         padding-left: 10px;
         padding-right: 10px;
@@ -293,4 +294,103 @@ div > a > img {
     padding-top: 100px;
     }
 }
+
+@media screen and (max-width: 830px ){
+    section{
+        top:320px;
+    }
+    .woorden {
+        top:180px;
+    }
+    footer {
+        padding-top: 150px;
+    }
+}
+
+@media screen and (max-width: 520px ){
+    section {
+        top:400px;
+    }
+    .woorden {
+        top:260px;
+    }
+    footer {
+        padding-top: 220px;
+    }
+}
+
+
+/* vanaf hier nieuwe mediaquery */
+
+@media screen and (max-width: 465px ){
+    /* 457 */
+    body {
+        margin:0px;
+    }
+    /* navigatie */
+    #vini-mini-logo {
+        position:fixed;
+        top:6%;
+        left:2%;
+        z-index:5;
+        width:25%;
+    }
+
+    
+    /* geel notificatieblok */
+    section {
+        /* top: px; */
+        width:100%;
+        max-width:100%;
+        height:280px;
+        background-color: #F4EB34;
+        border-radius: 0px;
+        margin: auto;
+        position:relative;  
+        border: none;
+        padding-left: 10px;
+        padding-right: 10px;
+        top: 400px;
+    }
+    section:focus-within {
+        border: 6px solid #182A42;
+    }
+    h2 {
+        text-align:left;
+        top:14%;
+        position: relative;
+        font-size:1.7em;
+    }
+    span {
+        position: absolute;
+        top: 5%; 
+        right: 5%;
+        font-size:25px;
+    }
+    section > p {
+        text-align:left;
+        position: relative;
+        top:5%;
+        font-size: 1.5em;
+    }
+
+    /* footer  */
+    footer {
+        padding-top: 220px;
+    }
+    
+    }
+
+    @media screen and (max-width: 386px ){
+    section {
+        top:440px;
+    }
+    .woorden {
+        top: 300px;
+    }
+    /* footer  */
+    footer {
+        padding-top: 250px;
+    }
+    }
 
