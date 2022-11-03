@@ -15,12 +15,23 @@
 
 
 /* navigatie */ 
+
+/*nav probeersel*/
 nav {
-    z-index: 5;  
-    margin-top: 25px;
-    margin-left: 90px;
-    /* position:absolute; */
+    z-index: 6;
+    margin-top: 15px;
+    margin-left: 190px;
+    position:fixed;
 }
+#witte-achtergrond {
+    background-color: white;
+    z-index: 5;  
+    position: fixed;
+    width: 100%;
+    height:110px;
+    margin-top:-30px;
+    /* margin-left:-10px; */
+} 
 nav a:focus {
     outline: none;
 }
@@ -29,6 +40,9 @@ nav a:focus {
     top:3%;
     left:2%;
     z-index:5;
+}
+.middelnav {
+    margin-left: 50px;
 }
 .pijltje {
     width: 20px;
@@ -113,6 +127,7 @@ h1 {
 header {
     position: absolute;
     left: 20%;
+    top:110px;
 }
 header > p {
     font-size: 30px;
@@ -126,7 +141,7 @@ header:focus-within {
 
 /* geel notificatieblok */
 section {
-    top: 186px;
+    top: 286px;
     width:85%;
     height:200px;
     background-color: #F4EB34;
@@ -164,7 +179,7 @@ section > p {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    margin-top: 205px;
+    margin-top: 305px;
 }
 .blauw{
     flex-direction: column;
@@ -282,18 +297,6 @@ div > a > img {
         z-index:-1;
         padding-right: 60px
     }
-      /* Blauwe blokken */
-    .woorden {
-        flex-flow:wrap;
-        position:relative;
-        top: 100px;
-        z-index:-1;
-        margin-top: 160px;
-      }
-    div > a > img {
-        width: 100px;
-        height:70px;
-    }
     
     /* geel notificatieblok */
     section {
@@ -303,7 +306,7 @@ div > a > img {
         background-color: #F4EB34;
         border-radius: 47px;
         position:relative;
-        top: 230px;
+        top: 260px;
         z-index:-1;
         padding-left: 10px;
         padding-right: 10px;
@@ -319,35 +322,48 @@ div > a > img {
         font-size: 1.5em;
     }
 
+    /* Blauwe blokken */
+    .woorden {
+        flex-flow:wrap;
+        position:relative;
+        top: 120px;
+        z-index:-1;
+        margin-top: 160px;
+      }
+    div > a > img {
+        width: 100px;
+        height:70px;
+    }
+
     /* footer */
     footer {
     display: flex;
     justify-content: center;
-    padding-top: 100px;
+    padding-top: 110px;
     }
 }
 
 @media screen and (max-width: 830px ){
     section{
-        top:320px;
+        top:350px;
     }
     .woorden {
-        top:180px;
+        top:200px;
     }
     footer {
-        padding-top: 150px;
+        padding-top: 160px;
     }
 }
 
 @media screen and (max-width: 520px ){
     section {
-        top:400px;
+        top:430px;
     }
     .woorden {
-        top:260px;
+        top:280px;
     }
     footer {
-        padding-top: 220px;
+        padding-top: 230px;
     }
 }
 
@@ -380,7 +396,7 @@ div > a > img {
         border: none;
         padding-left: 10px;
         padding-right: 10px;
-        top: 400px;
+        top: 420px;
     }
     h2 {
         top:14%;
@@ -394,7 +410,7 @@ div > a > img {
         justify-content: space-evenly;
         align-items: center;
         margin-top:0px;
-        top:400px;
+        top:420px;
     }
     .listitem:nth-child(1) {
         background-color: #D6F0F1;
@@ -415,7 +431,7 @@ div > a > img {
 
     /* footer  */
     footer {
-        padding-top: 350px;
+        padding-top: 370px;
     }
 }
     
