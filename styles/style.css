@@ -113,7 +113,6 @@ section > p {
 .woorden {
     z-index: 5;
     font-size: 2em;
-    /* position:relative; */
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -124,9 +123,6 @@ section > p {
     height:220px;
     width:180px;
 }
-/* .blauw:focus-within {
-    border: 6px solid #182A42;
-} */
 .woorden > div:focus-within {
     border: 6px solid #182A42; 
 }
@@ -246,19 +242,7 @@ div > a > img {
         z-index:-1;
         margin-top: 160px;
       }
-    /* #kalender, #dagboek, #vraagteken, #berichten {
-        font-size: 80%;
-        display: flex;
-        flex-direction: column;
-        width: 160px;
-        height: 200px;
-      } */
-    /* .blauw {
-        height:180px;
-        width:140px;
-    } */
     div > a > img {
-        /* display: none; */
         width: 100px;
         height:70px;
     }
@@ -320,10 +304,10 @@ div > a > img {
 }
 
 
-/* vanaf hier nieuwe mediaquery */
+/* mediaquery mobiele telefoons */
 
 @media screen and (max-width: 465px ){
-    /* 457 */
+
     body {
         margin:0px;
     }
@@ -336,10 +320,8 @@ div > a > img {
         width:25%;
     }
 
-    
     /* geel notificatieblok */
     section {
-        /* top: px; */
         width:100%;
         max-width:100%;
         height:280px;
@@ -352,39 +334,19 @@ div > a > img {
         padding-right: 10px;
         top: 400px;
     }
-    section:focus-within {
-        border: 6px solid #182A42;
-    }
     h2 {
-        text-align:left;
         top:14%;
-        position: relative;
-        font-size:1.7em;
-    }
-    span {
-        position: absolute;
-        top: 5%; 
-        right: 5%;
-        font-size:25px;
-    }
-    section > p {
-        text-align:left;
-        position: relative;
-        top:5%;
-        font-size: 1.5em;
     }
 
     /* Blauwe vakken verander */
     .woorden {
         background-color: #B2DECD;
         font-size: 2em;
-        /* position:relative; */
         display: flex;
         justify-content: space-evenly;
         align-items: center;
         margin-top:0px;
         top:400px;
-        /* margin-top: 205px; */
     }
     .listitem:nth-child(1) {
         background-color: #D6F0F1;
@@ -398,51 +360,10 @@ div > a > img {
     .listitem:nth-child(4) {
         background-color: #72AFA6;
     }
-    .blauw{
-        flex-direction: column;
-        height:220px;
-        width:180px;
-    }
-    /* .woorden > div:focus-within {
-        border: 6px solid #182A42; 
-    }
-    .listitem a:focus {
-        outline: none;
-    } */
-    div > a > p {
-        font-size: 18px;
-    }
     .woorden > div {
-        background-color: #B2DECD;
-        padding: 20px;
         border-radius: 0px;
         border: none;
     }
-    /* .listitem:focus-within {
-        background-color: #D6F0F1;
-        /* margin:20px; groter op focus */
-    
-    /* .listitem:hover {
-        background-color: #D6F0F1;
-    } */ 
-    .woorden > div > a > b {
-        text-decoration: underline;
-    }
-    a {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-decoration: none;
-        color:black;
-    }
-    div > a > img {
-        display:flex;
-        align-self: center;
-        width:100px;
-        height: 70px;
-    }
-
-
 
     /* footer  */
     footer {
