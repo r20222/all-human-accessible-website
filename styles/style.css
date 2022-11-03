@@ -7,7 +7,7 @@
 }
 
 
-/* navigatie */
+/* navigatie */ 
 nav {
     z-index: 5;  
     margin-top: 25px;
@@ -71,6 +71,18 @@ nav > ul > li:focus-within {
     left:43px;
     padding:55px;
     border-radius: 0px;
+}
+.focuslogo:active {
+    background-color:white;
+    border: none;
+}
+/* .focuslogo:visited {
+    border: none;
+    background-color:none;
+} */
+nav > ul > li:active {
+    background-color:white;
+    border: none;
 }
 nav > ul > li:nth-child(8) {
     display:none;
