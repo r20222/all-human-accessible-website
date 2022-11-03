@@ -55,12 +55,20 @@ nav > ul > li:focus-within {
     padding:4px;
     border-radius: 47px;
 }
-.focus:focus-within {
+.focusww:focus-within {
     border: 3px solid #182A42;
     background-color: #FAC6B8;
     padding:18px;
     top: 5%;
-    right: 30px;
+    margin-right: 16px;
+    border-radius: 47px;
+}
+.focuscc:focus-within {
+    border: 3px solid #182A42;
+    background-color: #FAC6B8;
+    padding:18px;
+    top: 5%;
+    margin-right: -2px;
     border-radius: 47px;
 }
 .focuslogo:focus-within {
