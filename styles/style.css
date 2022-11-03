@@ -6,6 +6,13 @@
     background-color: #ECE4D1;
 }
 
+/* kan ik hiermee op klik de focus verwijderen? */
+/* *:focus:not(.focus-within) {
+    outline: none;
+    background-color: white;
+    border:none;
+  } */
+
 
 /* navigatie */ 
 nav {
@@ -59,17 +66,19 @@ nav > ul > li:focus-within {
     border: 3px solid #182A42;
     background-color: #FAC6B8;
     padding:18px;
-    top: 5%;
-    margin-right: 16px;
+    top: 4%;
+    right: 144px;
     border-radius: 47px;
+    position:fixed;
 }
 .focuscc:focus-within {
     border: 3px solid #182A42;
     background-color: #FAC6B8;
     padding:18px;
-    top: 5%;
-    margin-right: -2px;
+    top: 4%;
+    right: 68px;
     border-radius: 47px;
+    position:fixed;
 }
 .focuslogo:focus-within {
     position:fixed;
