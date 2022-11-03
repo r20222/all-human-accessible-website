@@ -11,6 +11,8 @@
 nav {
     z-index: 5;  
     margin-top: 25px;
+    margin-left: 90px;
+    /* position:absolute; */
 }
 nav a:focus {
     outline: none;
@@ -49,18 +51,26 @@ nav > ul > li {
 }
 nav > ul > li:focus-within {
     border: 3px solid #182A42;
+    background-color: #FAC6B8;
     padding:4px;
     border-radius: 47px;
 }
 .focus:focus-within {
     border: 3px solid #182A42;
+    background-color: #FAC6B8;
     padding:18px;
+    top: 5%;
+    right: 30px;
     border-radius: 47px;
 }
 .focuslogo:focus-within {
-    border: 3px solid #182A42;
-    padding:30px;
-    border-radius: 47px;
+    position:fixed;
+    border: 6px solid #182A42;
+    background-color: #FAC6B8;
+    top:2%;
+    left:43px;
+    padding:55px;
+    border-radius: 0px;
 }
 nav > ul > li:nth-child(8) {
     display:none;
