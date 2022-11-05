@@ -242,8 +242,15 @@ div > a > img {
     }
 }
 
-@media screen and (max-width: 1285px ){
+@media screen and (max-width : 1285px){
+    .middelnav {
+        margin-left: 10px;
+    }
+}
+
+@media screen and (max-width: 1179px ){
     /* 1133px */
+    /* 1285px */
 
    /* navigatie */
     #witte-achtergrond {
